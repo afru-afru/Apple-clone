@@ -1,0 +1,58 @@
+.second-highlight-wrapper {
+    background-image: url("../../assets/img/12.jpg");
+    height: 580px; /* Initial height */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 65px 20px; /* Padding for content */
+    color: black; /* Text color */
+    margin-top: 20px;
+    position: relative; /* Necessary for positioning children */
+    display: flex; /* Flexbox for centering */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    min-height: 670px;
+
+}
+
+
+.title-wraperIphone {
+    font-weight: 700;
+    font-size: 70px; /* Title font size */
+    margin: 0; /* Remove margin */
+}
+
+.description-wrapperIphone {
+    font-size: 30px; /* Description font size */
+    padding: 10px 0; /* Padding for spacing */
+}
+
+.price-wrapper {
+    color: black;
+    font-size: 0.85em; /* Price font size */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .second-highlight-wrapper {
+        height: 650px;
+
+        justify-content: flex-start; /* Align items at the start for better centering */
+    }
+
+    .title-wraperIphone {
+        font-size: 40px; /* Smaller title font size */
+        margin-bottom: 10px; /* Space below title */
+    }
+
+    .description-wrapperIphone {
+        font-size: 24px; /* Smaller description font size */
+        margin-bottom: 10px; /* Space below description */
+    }
+
+    .price-wrapper {
+        font-size: 0.75em; /* Smaller price font size */
+    }
+
+}

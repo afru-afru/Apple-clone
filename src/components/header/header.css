@@ -1,0 +1,106 @@
+.header-wrapper {
+    background: #FFFFFF !important;
+    color: rgb(110, 110, 115);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    min-height: 60px; /* Minimum height for the header */
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.internal-wrapper {
+    max-width: 1200px; /* Limit width for larger screens */
+    margin: 0 auto;
+    display: flex; /* Use Flexbox for centering */
+    align-items: center; /* Center items vertically */
+    min-height: 100%; /* Fill the height of the header */
+}
+
+.header-links-wrapper {
+    display: flex; /* Use Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space items evenly */
+   min-height: 100%; /* Fill the height of the internal wrapper */
+}
+
+.header-links-wrapper ul {
+    display: flex; /* Flex layout for list */
+    gap: 50px; /* Space between items */
+    align-items: center; /* Center items vertically within the list */
+    list-style: none; /* Remove default list styles */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.header-links-wrapper ul.open {
+    flex-direction: column; /* Stack items vertically when open */
+    max-height: 500px !important; /* Adjust as necessary for your design */
+}
+
+.header-links-wrapper li {
+    display: flex; /* Ensure list items can use flex properties */
+    align-items: center; /* Center content vertically within the item */
+}
+
+.header-links-wrapper li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.986);
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.8; /* Default opacity */
+    margin-top: 20px;
+}
+
+.header-links-wrapper a:hover {
+    color: rgb(0, 0, 0); /* Change color on hover */
+    opacity: 1; /* Full opacity on hover */
+}
+
+.search-link a, .cart-link a,.logo-link a {
+    font-size: 25px !important; /* Icon size */
+}
+
+.menu-icon {
+    display: none; /* Hidden by default */
+    font-size: 20px; /* Icon size */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .header-links-wrapper {
+        flex-direction: column; /* Stack links vertically on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .header-links-wrapper ul {
+        flex-direction: column; /* Stack links vertically */
+        gap: 20px; /* Adjust gap for vertical stacking */
+        max-height: 0; /* Hide by default */
+        overflow: hidden; /* Hide overflow */
+        transition: max-height 0.3s ease; /* Smooth transition */
+    }
+  .header-links-wrapper ul li a{
+    font-size: 25px !important;
+    font-weight: 400 !important;
+  }
+    .header-links-wrapper ul.open {
+        max-height: 500px; /* Show when open */
+    }
+
+    .menu-icon {
+        display: block; /* Show menu icon on small screens */
+    }
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 769px) {
+    .header-links-wrapper {
+        justify-content: space-between; /* Space items evenly on larger screens */
+    }
+
+    .header-links-wrapper ul {
+        flex-direction: row; /* Ensure items are in a row */
+        max-height: none; /* Remove height restriction */
+    }
+}

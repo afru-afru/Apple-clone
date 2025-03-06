@@ -1,0 +1,12 @@
+.youtubeVidiosWrapper{
+    background: #fff;
+    padding: 50px;
+
+}
+.singleVideoWrapper{
+    background: #f3f2f2;
+    margin-bottom: 20px;
+    box-shadow: 4px 0px 13px rgba(158, 158, 158, 0.12);
+    max-height: 312px;
+    overflow: hidden;
+}

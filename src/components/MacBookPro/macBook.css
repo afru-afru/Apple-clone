@@ -1,0 +1,161 @@
+:root {
+    --primary-color: #0071E3;
+    --hover-color: #06c;
+    --text-color: rgb(110, 110, 115);
+}
+
+.main-highlight-wrapper {
+    background-image: url("../../assets/img/10002.jpg");
+	height: auto; /* Allow height to adjust based on content */
+    min-height: 670px; /* Maintain a minimum height if needed */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 65px 20px; /* Adjusted padding */
+    position: relative;
+}
+
+.links-wrapper ul {
+    list-style: none;
+}
+
+.model img {
+    width: 250px; /* Set a specific width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't exceed the container width */
+    display: block; /* Remove any inline spacing */
+    margin: 0 auto;
+}
+
+.product-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 25px;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-top: 20px;
+}
+
+.brief-description {
+    font-size: 20px;
+    color: var(--text-color);
+    line-height: 25px;
+    padding-top: 20px;
+}
+
+.links-wrapper {
+    padding: 15px 0;
+}
+
+.links-wrapper ul li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.links-wrapper ul li a {
+    color: var(--hover-color);
+    text-decoration: none;
+}
+
+.links-wrapper ul li a:hover {
+    color: #000;
+}
+
+/* Button-like style for links */
+.button-link {
+    display: inline-block; /* Make links behave like buttons */
+    padding: 10px 20px; /* Add padding for a larger clickable area */
+    text-decoration: none; /* Remove underline */
+    border-radius: 25px; /* Curved border */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    border: 1px solid var(--primary-color);
+}
+
+.link1 {
+    background-color: var(--primary-color);
+    color: white !important;
+}
+
+.link2 {
+    color: var(--primary-color) !important;
+}
+
+.link2:hover {
+    background-color: var(--primary-color);
+    color: white !important;
+}
+
+.button-link:active {
+    transform: translateY(0);
+}
+
+.bottomText12 {
+    position: absolute; /* Position it relative to the nearest positioned ancestor */
+    left: 50%; /* Center horizontally */
+    bottom: 20px;
+    transform: translateX(-50%); /* Adjust for centering */
+    text-align: center; /* Center text inside the container */
+    background: linear-gradient(94deg, #0090F7, #BA62FC, #F2416B, #F55600);
+    color: transparent !important;
+    background-clip: text !important;
+    font-size: 30px; /* Adjust font size as needed */
+    font-weight: 500 !important;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.bottomText p {
+    color: var(--primary-color);
+    font-weight: 500 !important;
+}
+
+.bottomText p .apple {
+    color: rgba(213, 71, 208, 0.132) !important;
+}
+
+.bottomText p .intelligence {
+    color: red !important; /* Corrected the spelling */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-highlight-wrapper {
+
+        padding: 40px 10px; /* Adjust padding for smaller screens */
+
+
+    }
+
+    .model img {
+        width: 200px; /* Smaller image width */
+    }
+
+    .product-title {
+        font-size: 24px; /* Smaller font size */
+    }
+
+    .brief-description {
+        font-size: 16px; /* Smaller font size */
+    }
+
+    .links-wrapper ul li {
+        padding-right: 10px; /* Reduce spacing between links */
+    }
+
+    .bottomText {
+        font-size: 24px; /* Smaller font size */
+        bottom: 10px; /* Adjust position */
+    }
+
+    /* Stack links vertically on small screens */
+    .links-wrapper ul {
+        display: flex;
+
+
+       justify-content: center;
+    }
+
+    .links-wrapper ul li {
+        padding-right: 0; /* Remove right padding */
+        margin-bottom: 10px; /* Add space between links */
+    }
+}

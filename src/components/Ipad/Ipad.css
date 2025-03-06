@@ -1,0 +1,65 @@
+.main-highlight-wrapperIpad{
+    background-image: url("../../assets/img/10003.jpg");
+    height: 750px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     text-align: center;
+    /* padding: 65px 20px; */
+    margin-top: 20px;
+    position: relative;
+
+
+}
+.internal-wrapperIpad{
+    position: absolute;
+    right: 550px !important;
+    top: 30%;
+    text-align: center;
+
+
+}
+.internal-wrapperIpad h1{
+    font-size: 70px;
+    font-weight: 600;
+
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .main-highlight-wrapperIpad {
+
+        padding: 40px 10px; /* Adjust padding for smaller screens */
+		height: 650px;
+    }
+
+    .internal-wrapperIpad{
+
+        right: 10px !important;
+        top: 30%;
+        text-align: center;
+
+
+    }
+
+
+
+    .links-wrapper ul li {
+        padding-right: 10px; /* Reduce spacing between links */
+    }
+
+
+    /* Stack links vertically on small screens */
+    .links-wrapper ul {
+        display: flex;
+        gap: 20px;
+
+
+       justify-content: center;
+    }
+
+    .links-wrapper ul li {
+        padding-right: 0; /* Remove right padding */
+        margin-bottom: 10px; /* Add space between links */
+    }
+}

@@ -1,0 +1,195 @@
+/* General Styles for Highlight Sections */
+.highlight-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.left-side-wrapper,
+.right-side-wrapper {
+    height: 580px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 48.5%;
+    margin: 1% 0.5%;
+    padding-top: 54px;
+}
+
+.highlight-wrapper .left-side-wrapper {
+    background-image: url("../../assets/images/home/watch-series-5.jpg");
+}
+
+.highlight-wrapper .right-side-wrapper {
+    background-image: url("../../assets/images/home/apple-card.jpg");
+}
+
+.description-wrapper {
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 20px !important;
+}
+
+/* Fifth Highlight Section */
+.fifth-highlight-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.highlight-wrapper .left-side-wrapper {
+    background-image: url("../../assets/images/home/apple-tv-background.jpg");
+}
+
+.fifth-highlight-wrapper .right-side-wrapper {
+    background-image: url("../../assets/images/home/air-pods.jpg");
+    color: #fff;
+    background-size: initial;
+    background-color: #000;
+    background-position: bottom;
+}
+
+.tvshow-logo-wrapper {
+    padding: 180px 0 200px;
+}
+
+.watch-more-wrapper a {
+    text-decoration: none;
+    font-size: 0.85em;
+}
+
+.watch-more-wrapper a:after {
+    font-family: "FontAwesome";
+    font-weight: 900;
+    content: "\f144";
+    padding-left: 15px;
+}
+
+/* Sixth Highlight Section */
+.sixth-highlight-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.sixth-highlight-wrapper .left-side-wrapper {
+    background-image: url("../images/home/macbook-pro.jpg");
+    background-size: initial;
+    background-color: #fafafa;
+    background-position: bottom;
+}
+
+.sixth-highlight-wrapper .right-side-wrapper {
+    background-image: url("../images/home/new-ipad.jpg");
+}
+
+/* Product Title Styles */
+.product-title-small {
+    font-weight: 700;
+    font-size: 45px;
+}/* Fourth Highlight Section */
+.fourth-highlight-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.left-side-wrapper,
+.right-side-wrapper {
+    height: 580px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 48.5%;
+    margin: 1% 0.5%;
+    padding-top: 54px;
+}
+
+.fourth-highlight-wrapper .left-side-wrapper {
+    background-image: url("../images/home/watch-series-5.jpg");
+}
+
+.fourth-highlight-wrapper .right-side-wrapper {
+    background-image: url("../images/home/apple-card.jpg");
+}
+
+.description-wrapper {
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Fifth Highlight Section */
+.fifth-highlight-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.fifth-highlight-wrapper .left-side-wrapper {
+    background-image: url("../images/home/apple-tv-background.jpg");
+}
+
+.fifth-highlight-wrapper .right-side-wrapper {
+    background-image: url("../images/home/air-pods.jpg");
+    color: #fff;
+    background-size: initial;
+    background-color: #000;
+    background-position: bottom;
+}
+
+.logo-wrapper {
+    font-size: 40px;
+    font-weight: bold;
+}
+.logo-wrapper img{
+    width: 140px !important;
+}
+
+.tvshow-logo-wrapper {
+    padding: 180px 0 200px;
+}
+
+.watch-more-wrapper a {
+    text-decoration: none;
+    font-size: 0.85em;
+}
+
+/* Sixth Highlight Section */
+.sixth-highlight-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.sixth-highlight-wrapper .left-side-wrapper {
+    background-image: url("../images/home/macbook-pro.jpg");
+    background-size: initial;
+    background-color: #fafafa;
+    background-position: bottom;
+}
+
+.sixth-highlight-wrapper .right-side-wrapper {
+    background-image: url("../images/home/new-ipad.jpg");
+}
+
+.product-title-small {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .highlight-wrapper {
+        flex-direction: column;
+    }
+    .left-side-wrapper,
+    .right-side-wrapper {
+        width: 100%;
+        height: auto; /* Allow height to adjust automatically */
+        margin: 1% 0;
+    }
+}

@@ -1,0 +1,154 @@
+
+*, *::before, *::after {
+    box-sizing: border-box; /* Include padding and border in element's total width/height */
+}
+
+.footer-wrapper {
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+    font-size: 0.85em; /* Adjust base font size */
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Apple Legacy Chevron", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.upper-text-container {
+    border-bottom: 1px solid #d2d2d7;
+    color: #86868b;
+    padding: 20px 0; /* Increased padding for spacing */
+}
+
+.upper-text-container a {
+    text-decoration: none;
+    color: #515154;
+}
+
+.upper-text-container a:hover {
+    text-decoration: underline;
+    color: #0071e3; /* Change color on hover */
+}
+
+.footer-links-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.internal-wrapperFooter {
+    max-width: 980px; /* Limit width for larger screens */
+    width: 100%; /* Full width on smaller screens */
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.footer-wrapper ul {
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+.footer-wrapper ul li {
+    padding: 5px 0;
+    font-size: 0.9em;
+}
+
+.footer-links-wrapper a {
+    color: #515154;
+    text-decoration: none;
+}
+
+.footer-links-wrapper a:hover {
+    text-decoration: underline;
+    color: #0071e3; /* Change color on hover */
+}
+
+.footer-links-wrapper h3 {
+    font-size: 14px; /* Slightly larger heading size */
+    font-weight: 600;
+    margin-bottom: 10px; /* Add space below headings */
+}
+
+.my-apple-wrapper {
+    border-bottom: 1px solid #d2d2d7;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.copyright-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 20px;
+}
+
+.footer-links-terms ul li {
+    display: inline-block;
+    padding: 0 5px;
+    border-right: 1px solid #ccc;
+}
+
+.footer-links-terms ul li:last-child {
+    border-right: 0px;
+}
+
+.footer-links-terms ul li a {
+    text-decoration: none;
+    color: #515154;
+}
+
+.footer-links-terms ul li a:hover {
+    text-decoration: underline;
+    color: #0071e3; /* Change color on hover */
+}
+
+.footer-country {
+    display: inline-block;
+}
+
+.flag-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-country-name {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .internal-wrapperFooter {
+        width: 100%; /* Full width on smaller screens */
+        padding: 0 15px; /* Adjust padding */
+    }
+
+    .footer-links-wrapper {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center items */
+        padding-top: 10px; /* Adjust spacing */
+    }
+
+    .footer-links-wrapper h3 {
+        font-size: 14px; /* Slightly larger font size on smaller screens */
+        text-align: center; /* Center headings on small screens */
+    }
+
+    .footer-wrapper ul li {
+        font-size: 0.85em; /* Smaller font size for list items */
+        text-align: center; /* Center text for better alignment */
+    }
+
+    .copyright-wrapper {
+        flex-direction: column; /* Stack copyright items vertically */
+        align-items: center; /* Center items */
+        text-align: center; /* Center text */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-wrapper {
+        font-size: 0.75em; /* Smaller overall font size for mobile */
+    }
+
+    .footer-links-terms ul li {
+        display: block; /* Stack terms links vertically */
+        padding: 5px 0; /* Adjust padding */
+    }
+}

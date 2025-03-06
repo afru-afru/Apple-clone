@@ -1,0 +1,118 @@
+.fourth-heghlight-wrapper2 {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 20px; /* Added padding for overall spacing */
+}
+
+.left-side-wrapper2 {
+    height: 580px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 48.5%;
+    margin: 1% 0.5% 0% 1%;
+    padding-top: 54px;
+    background-image: url("../../assets/img/10007.jpg");
+}
+
+.right-side-wrapper2 {
+    height: 580px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 48.5%;
+    margin: 1% 1% 0% 0.5%;
+    padding-top: 54px;
+    position: relative;
+    background-image: url("../../assets/img/17.jpg");
+}
+
+.description {
+    font-size: 24px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.right-side-wrapper2 .top-logo-wrapper2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600 !important;
+}
+
+.description-wraper2 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    .fourth-heghlight-wrapper2 {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .left-side-wrapper2,
+    .right-side-wrapper2 {
+        width: 100%; /* Full width on medium screens */
+        height: auto; /* Allow height to adjust based on content */
+        margin: 10px 0; /* Vertical margin */
+    }
+
+    .description {
+        font-size: 20px; /* Smaller font size for descriptions */
+    }
+
+    .description-wraper2 {
+        font-size: 20px; /* Adjust description font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .fourth-heghlight-wrapper2 {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .left-side-wrapper2,
+    .right-side-wrapper2 {
+        padding-top: 30px; /* Less padding for the top */
+    }
+
+    .description {
+        font-size: 18px; /* Further reduce font size */
+    }
+
+    .description-wraper2 {
+        font-size: 18px; /* Further reduce font size */
+    }
+
+    .right-side-wrapper2 .top-logo-wrapper2 {
+        font-size: 32px; /* Smaller logo font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .left-side-wrapper2,
+    .right-side-wrapper2 {
+        height: 650px;
+        padding: 15px; /* Less padding for mobile */
+    }
+
+    .description {
+        font-size: 16px; /* Smallest font size for mobile */
+    }
+
+    .description-wraper2 {
+        font-size: 16px; /* Smallest font size for mobile */
+    }
+
+    .right-side-wrapper2 .top-logo-wrapper2 {
+        font-size: 28px; /* Smaller font size for mobile */
+    }
+
+    /* Additional adjustments for buttons or links can be added here */
+}

@@ -1,5 +1,4 @@
-
-import "./Card3.css"
+import "./card3Style.css"
 import card from "../../assets/img/carddd.png"
 function Card3() {
   return (
